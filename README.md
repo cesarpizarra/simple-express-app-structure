@@ -8,7 +8,7 @@ Here’s a common folder structure for an Express.js application:
 
 Explanation of Each Directory and File:
 
-- **`app.js/`**: The main entry point of the application. This is where you initialize the Express app, set up middleware, define routes, and start the server. Think of it as the control center of your web application. Optionally, you can name it server.js or index.js.
+- **`app.js`**: The main entry point of the application. This is where you initialize the Express app, set up middleware, define routes, and start the server. Think of it as the control center of your web application. Optionally, you can name it server.js or index.js.
 
 - **`bin/`**: The bin directory contains server startup scripts. For example, the www file is typically used to start the Express server and can include environment variable setup for different environments (development, production).
 
@@ -30,8 +30,8 @@ Explanation of Each Directory and File:
 
 - **`utils/`**: Utility functions that are used across the application. These functions typically perform common tasks like validation, formatting, or calculations and are kept separate for reusability.
 
-- **`.env/`**: This file contains environment variables for your application, such as database credentials or API keys. Using a package like dotenv, these variables can be securely loaded into your app.
+- **`.env`**: This file contains environment variables for your application, such as database credentials or API keys. Using a package like dotenv, these variables can be securely loaded into your app.
 
 - **`node_modules/`**: This directory contains all your project’s dependencies, managed by npm (or yarn). It’s automatically created when you run npm install and should be excluded from version control using .gitignore.
 
-- **`README.md/`**: A markdown file to document your project. It typically includes a description of the project, setup instructions, and other relevant details for developers or users.
+- **`README.md`**: A markdown file to document your project. It typically includes a description of the project, setup instructions, and other relevant details for developers or users.
